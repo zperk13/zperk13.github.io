@@ -1,4 +1,5 @@
 ---
+theme: default
 title: About
 permalink: /about/
 ---
