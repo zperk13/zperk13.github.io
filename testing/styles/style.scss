@@ -1,7 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+@import "_reset.scss";
 
 html,
 body {
@@ -11,6 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .main-page {
+	$link-color: rgb(0, 192, 0);
 	width: 100%;
 	min-height: 100%;
 	background-color: #181818;
@@ -60,14 +58,14 @@ body {
 						padding-right: 1em;
 					}
 					span {
-						color: green;
+						color: $link-color;
 						flex-grow: 2;
 					}
 				}
 				&:hover {
 					a {
 						text-decoration: underline;
-						text-decoration-color: green;
+						text-decoration-color: $link-color;
 					}
 				}
 			}
