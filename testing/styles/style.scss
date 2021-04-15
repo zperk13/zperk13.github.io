@@ -76,14 +76,20 @@ body {
 		h1 {
 			margin: 0.5em;
 		}
-		ul {
+		nav {
 			flex-direction: column;
-			flex-wrap: nowrap;
-			min-width: 100%;
-			li {
-				width: 16em;
-				overflow: hidden;
-				margin: 0;
+			align-items: center;
+			ul {
+				width: 85%;
+				flex-grow: 2;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: start;
+				li {
+					width: 100%;
+					overflow: hidden;
+					margin: 1em 0;
+				}
 			}
 		}
 	}
