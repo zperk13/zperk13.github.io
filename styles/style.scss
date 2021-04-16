@@ -1,0 +1,90 @@
+@import "_reset.scss";
+
+html,
+body {
+	height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.main-page {
+	$link-color: rgb(0, 192, 0);
+	width: 100%;
+	min-height: 100%;
+	background-color: #181818;
+	display: flex;
+	flex-direction: column;
+	font-family: "Roboto Mono";
+	font-size: 36px;
+	h1 {
+		text-align: center;
+		color: white;
+		font-size: 2em;
+		margin: 0.5em;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		flex-grow: 2;
+		ul {
+			width: 85%;
+			height: 85%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-content: center;
+			box-sizing: border-box;
+			li {
+				width: 20em;
+				height: 4em;
+				display: inline-block;
+				background-color: #202020;
+				border: 2px solid #aaaaaa;
+				border-radius: 1em;
+				margin: 0.5em;
+				box-sizing: border-box;
+				a {
+					box-sizing: border-box;
+					padding: 1em;
+					width: 100%;
+					height: 100%;
+					text-decoration: none;
+					color: $link-color;
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					align-items: center;
+				}
+				&:hover {
+					a {
+						text-decoration: underline;
+						text-decoration-color: $link-color;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 719px) {
+		font-size: 16px;
+		h1 {
+			margin: 0.5em;
+		}
+		nav {
+			flex-direction: column;
+			align-items: center;
+			ul {
+				width: 85%;
+				flex-grow: 2;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: start;
+				li {
+					width: 100%;
+					overflow: hidden;
+					margin: 1em 0;
+				}
+			}
+		}
+	}
+}
