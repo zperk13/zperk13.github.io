@@ -141,7 +141,7 @@ body {
   height: 100%;
 }
 
-.main-page {
+.nav-page {
   width: 100%;
   min-height: 100%;
   background-color: #181818;
@@ -156,14 +156,14 @@ body {
   font-size: 36px;
 }
 
-.main-page h1 {
+.nav-page h1 {
   text-align: center;
   color: white;
   font-size: 2em;
   margin: 0.5em;
 }
 
-.main-page nav {
+.nav-page nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +176,7 @@ body {
           flex-grow: 2;
 }
 
-.main-page nav ul {
+.nav-page nav ul {
   width: 85%;
   height: 85%;
   display: -webkit-box;
@@ -192,7 +192,7 @@ body {
           box-sizing: border-box;
 }
 
-.main-page nav ul li {
+.nav-page nav ul li {
   width: 20em;
   height: 4em;
   display: inline-block;
@@ -207,7 +207,7 @@ body {
   /* 3d? */
 }
 
-.main-page nav ul li a {
+.nav-page nav ul li a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1em;
@@ -228,7 +228,7 @@ body {
           align-items: center;
 }
 
-.main-page nav ul li:hover {
+.nav-page nav ul li:hover {
   -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
           box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(4px, -4px, 0);
@@ -236,20 +236,20 @@ body {
   border-width: 4px;
 }
 
-.main-page nav ul li:hover a {
+.nav-page nav ul li:hover a {
   text-decoration: underline;
   -webkit-text-decoration-color: #00c000;
           text-decoration-color: #00c000;
 }
 
 @media screen and (max-width: 719px) {
-  .main-page {
+  .nav-page {
     font-size: 16px;
   }
-  .main-page h1 {
+  .nav-page h1 {
     margin: 0.5em;
   }
-  .main-page nav {
+  .nav-page nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -258,7 +258,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .main-page nav ul {
+  .nav-page nav ul {
     width: 85%;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
@@ -273,7 +273,7 @@ body {
         -ms-flex-pack: start;
             justify-content: start;
   }
-  .main-page nav ul li {
+  .nav-page nav ul li {
     width: 100%;
     overflow: hidden;
     margin: 1em 0;
