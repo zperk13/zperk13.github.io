@@ -202,6 +202,9 @@ body {
   margin: 0.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  /* 3d? */
 }
 
 .main-page nav ul li a {
@@ -223,6 +226,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-page nav ul li:hover {
+  -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(4px, -4px, 0);
+          transform: translate3d(4px, -4px, 0);
+  border-width: 4px;
 }
 
 .main-page nav ul li:hover a {
