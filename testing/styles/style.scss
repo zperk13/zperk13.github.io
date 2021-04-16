@@ -47,20 +47,14 @@ body {
 				a {
 					box-sizing: border-box;
 					padding: 1em;
-					align-items: center;
-					display: flex;
 					width: 100%;
 					height: 100%;
 					text-decoration: none;
-					img {
-						height: 1.5em;
-						width: 1.5em;
-						padding-right: 1em;
-					}
-					span {
-						color: $link-color;
-						flex-grow: 2;
-					}
+					color: $link-color;
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					align-items: center;
 				}
 				&:hover {
 					a {
