@@ -295,7 +295,7 @@ body {
   margin-bottom: 0.25em;
 }
 
-ul {
+.projects-page ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +307,7 @@ ul {
   margin: auto;
 }
 
-ul li {
+.projects-page ul li {
   background-color: #202020;
   margin-top: 1em;
   width: 360px;
@@ -316,20 +316,20 @@ ul li {
   border-radius: 1em;
 }
 
-ul li img {
+.projects-page ul li img {
   display: block;
   height: 100%/3;
   margin: 0.5em auto 1em auto;
 }
 
-ul li h2 {
+.projects-page ul li h2 {
   font-size: 1.25em;
   color: white;
   text-align: center;
   margin: 1em auto;
 }
 
-ul li p {
+.projects-page ul li p {
   width: 85%;
   margin: 0 auto;
   margin-top: 0.5em;
@@ -344,7 +344,7 @@ ul li p {
 				*/
 }
 
-ul li a {
+.projects-page ul li a {
   font-size: 1.25em;
   display: block;
   width: 4em;
@@ -359,7 +359,7 @@ ul li a {
   transition: 0.25s linear;
 }
 
-ul li a:hover {
+.projects-page ul li a:hover {
   -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
           box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(3px, -3px, 0);
