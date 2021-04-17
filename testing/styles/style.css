@@ -337,11 +337,6 @@ body {
   color: #aaaaaa;
   text-align: center;
   height: calc(100% - (100% / 3) - 5.5em - 4px);
-  /*
-				100%/3 is the height of the image
-				1em from the h2 + 1em from the a + (0.5em + 0.5em) from the img margin + 0.5 em from the p margin-top
-				4px from (2px + 2px) from the a border
-				*/
 }
 
 .projects-page ul li a {
@@ -364,5 +359,21 @@ body {
           box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(3px, -3px, 0);
           transform: translate3d(3px, -3px, 0);
+}
+
+@media screen and (max-width: 719px) {
+  .projects-page {
+    font-size: 20px;
+  }
+  .projects-page h1 {
+    font-size: 2em;
+  }
+  .projects-page ul li {
+    width: 360px;
+    height: 450px;
+  }
+  .projects-page ul li p {
+    height: calc(100% - (100% / 3) - 7.5em - 4px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

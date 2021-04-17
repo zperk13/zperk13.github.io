@@ -110,6 +110,10 @@ $light-gray: #aaaaaa;
 		font-size: 4em;
 		margin-bottom: 0.25em;
 	}
+
+	$li-width: 360px;
+	$li-multiplier: 1.414;
+
 	ul {
 		display: flex;
 		justify-content: space-around;
@@ -119,10 +123,8 @@ $light-gray: #aaaaaa;
 		li {
 			background-color: $alt-bg-color;
 			margin-top: 1em;
-			$width: 360px;
-			$multiplier: 1.414;
-			width: $width;
-			height: $width * $multiplier;
+			width: $li-width;
+			height: $li-width * $li-multiplier;
 			border: 2px solid $light-gray;
 			border-radius: 1em;
 			img {
@@ -144,11 +146,6 @@ $light-gray: #aaaaaa;
 				color: $light-gray;
 				text-align: center;
 				height: calc(100% - (100% / 3) - 5.5em - 4px);
-				/*
-				100%/3 is the height of the image
-				1em from the h2 + 1em from the a + (0.5em + 0.5em) from the img margin + 0.5 em from the p margin-top
-				4px from (2px + 2px) from the a border
-				*/
 			}
 			a {
 				font-size: 1.25em;
@@ -166,6 +163,22 @@ $light-gray: #aaaaaa;
 					$amount: 3px;
 					box-shadow: -$amount $amount $amount rgba(0, 0, 0, 0.5);
 					transform: translate3d($amount, -$amount, 0);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 719px) {
+		$li-multiplier: 1.25;
+		font-size: 20px;
+		h1 {
+			font-size: 2em;
+		}
+		ul {
+			li {
+				width: $li-width;
+				height: $li-width * $li-multiplier;
+				p {
+					height: calc(100% - (100% / 3) - 7.5em - 4px);
 				}
 			}
 		}
