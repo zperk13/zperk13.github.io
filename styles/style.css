@@ -204,7 +204,6 @@ body {
           box-sizing: border-box;
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
-  /* 3d? */
 }
 
 .nav-page nav ul li a {

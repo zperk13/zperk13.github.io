@@ -204,7 +204,6 @@ body {
           box-sizing: border-box;
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
-  /* 3d? */
 }
 
 .nav-page nav ul li a {
@@ -278,5 +277,92 @@ body {
     overflow: hidden;
     margin: 1em 0;
   }
+}
+
+.projects-page {
+  width: 100%;
+  min-height: 100%;
+  background-color: #181818;
+  font-size: 24px;
+  font-family: "Roboto Mono";
+}
+
+.projects-page h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 0.25em;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+}
+
+ul li {
+  background-color: #202020;
+  margin-top: 1em;
+  width: 360px;
+  height: 509.04px;
+  border: 2px solid #aaaaaa;
+  border-radius: 1em;
+}
+
+ul li img {
+  display: block;
+  height: 100%/3;
+  margin: 0.5em auto 1em auto;
+}
+
+ul li h2 {
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  margin: 1em auto;
+}
+
+ul li p {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  font-size: 0.75em;
+  color: #aaaaaa;
+  text-align: center;
+  height: calc(100% - (100% / 3) - 5.5em - 4px);
+  /*
+				100%/3 is the height of the image
+				1em from the h2 + 1em from the a + (0.5em + 0.5em) from the img margin + 0.5 em from the p margin-top
+				4px from (2px + 2px) from the a border
+				*/
+}
+
+ul li a {
+  font-size: 1.25em;
+  display: block;
+  width: 4em;
+  text-align: center;
+  margin: auto;
+  background-color: #181818;
+  border: 2px solid #aaaaaa;
+  border-radius: 0.75em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+}
+
+ul li a:hover {
+  -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(3px, -3px, 0);
+          transform: translate3d(3px, -3px, 0);
 }
 /*# sourceMappingURL=style.css.map */
