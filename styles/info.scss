@@ -1,0 +1,19 @@
+@import "style.scss";
+
+body {
+	background-color: #202020;
+	main {
+		width: 80%;
+		font-size: $font-size;
+		margin: $font-size auto;
+		color: white;
+		padding-top: $header-height;
+		line-height: 150%;
+		a {
+			color: inherit;
+			&:hover {
+				color: lightgray;
+			}
+		}
+	}
+}

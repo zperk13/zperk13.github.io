@@ -7,87 +7,72 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-.nav-page {
-	$link-color: rgb(0, 192, 0);
-	width: 100%;
-	min-height: 100%;
-	background-color: #181818;
-	display: flex;
-	flex-direction: column;
+$font-size: 20px;
+$header-height: $font-size * 2;
+
+body {
 	font-family: "Roboto Mono";
-	font-size: 36px;
-	h1 {
-		text-align: center;
-		color: white;
-		font-size: 2em;
-		margin: 0.5em;
-	}
-	nav {
+	width: 100%;
+	color: white;
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #191919;
+		height: $header-height;
 		display: flex;
-		justify-content: center;
-		width: 100%;
-		flex-grow: 2;
-		ul {
-			width: 85%;
-			height: 85%;
+		a {
+			height: 100%;
+			margin: auto $font-size;
+			padding: 0 $font-size/2;
+			display: inline-block;
+			background-color: green;
+			text-decoration: none;
+			color: inherit;
+			background-color: inherit;
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-content: center;
-			box-sizing: border-box;
-			li {
-				width: 20em;
-				height: 4em;
-				display: inline-block;
-				background-color: #202020;
-				border: 2px solid #aaaaaa;
-				border-radius: 1em;
-				margin: 0.5em;
-				box-sizing: border-box;
-				transition: 0.25s linear;
-				a {
-					box-sizing: border-box;
-					padding: 1em;
-					width: 100%;
-					height: 100%;
-					text-decoration: none;
-					color: $link-color;
-					display: flex;
-					justify-content: center;
-					align-content: center;
-					align-items: center;
-				}
-				&:hover {
-					box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
-					transform: translate3d(4px, -4px, 0);
-					border-width: 4px;
-					a {
-						text-decoration: underline;
-						text-decoration-color: $link-color;
-					}
-				}
+			flex-flow: row nowrap;
+			align-items: center;
+			font-size: $font-size;
+			&:hover {
+				background-color: #434343;
 			}
 		}
-	}
-	@media screen and (max-width: 719px) {
-		font-size: 16px;
-		h1 {
-			margin: 0.5em;
+		img {
+			filter: invert(75%);
+			height: $font-size;
+			margin: auto 0;
 		}
-		nav {
-			flex-direction: column;
+	}
+	nav {
+		width: 100%;
+		padding-top: $header-height;
+		height: calc(100vh - #{$header-height});
+		background-color: #202020;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		a {
+			font-size: $font-size * 2;
+			display: inline-flex;
+			flex-flow: column nowrap;
+			background-color: inherit;
+			padding: $font-size;
+			text-decoration: none;
+			color: inherit;
 			align-items: center;
-			ul {
-				width: 85%;
-				flex-grow: 2;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				justify-content: start;
-				li {
-					width: 100%;
-					overflow: hidden;
-					margin: 1em 0;
-				}
+			border: 3px solid white;
+			border-radius: $font-size * 2;
+			img {
+				height: $font-size * 4;
+				filter: invert(100%);
+				padding: $font-size/2;
+			}
+			&:hover {
+				background-color: #4d4d4d;
 			}
 		}
 	}
