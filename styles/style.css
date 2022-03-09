@@ -148,6 +148,7 @@ body {
 }
 
 body header {
+  overflow-x: auto;
   position: fixed;
   top: 0;
   left: 0;
