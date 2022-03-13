@@ -148,6 +148,7 @@ body {
 }
 
 body header {
+  overflow-x: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -245,6 +246,7 @@ body nav a:hover {
 
 body {
   background-color: #202020;
+  height: calc(100vh - 40px);
 }
 
 body main {

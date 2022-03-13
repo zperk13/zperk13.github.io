@@ -2,6 +2,7 @@
 
 body {
 	background-color: #202020;
+	height: calc(100vh - #{$header-height});
 	main {
 		width: 80%;
 		font-size: $font-size;
